@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>My Hobbies</title>
+
+	<link rel="icon" type="image/x-icon" href="3.png">
+
+	<script src="https://kit.fontawesome.com/beb788cfd4.js" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="script.js" defer></script>
+
+	<style type="text/css">
+		
+body {
+	background-color: black;
+	font-family: Arial black;
+	margin: 0px;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(45deg, #00ffff, #008b8b, #e0ffff , #00ced1, #afeeee, #b0e0e6);
+    background-size: 600% 200%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 18px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+  transition: 0.2s;
+}
+
+.topnav a#active {
+  border-bottom: 3px solid red;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #A45D5D;
+  opacity: 100%;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 17px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 17px 18px;
+  border: none;
+}
+
+.openbtn:hover {
+  border-bottom: 3px solid red;
+  transition: 0.3s;
+}
+
+#main {
+  float: right;
+}
+
+#bar {
+  opacity: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+}
+
+.collapsible {
+  background-color: #323232;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.active, .collapsible:hover {
+  background-color: #2B2B28;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.photogs {
+
+	width: 700px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.hobby {
+
+	margin: 10px;
+	width: auto;
+	height: auto;
+	background:  rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.head {
+	color: white;
+	padding: 15px;
+}
+
+.footer {
+   margin-bottom: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.2);
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+}
+
+	</style>
+</head>
+<body>
+  <button class="openbtn" onclick="openNav()">☰ MENU</button> 
+</div></div>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">HOME </a>
+    <a id = "active" href="contacts.html">CONTACT DETAILS </a>
+    <a href="hobbies.html">HOBBIES </a>
+  </div>
+
+<h3 style="color: white; padding: 5px; font-size: 75px; margin: 10px;">HOBBIES</h3>
+	<div class="hobby">
+		<h1 class = "head">PHOTOGRAPHY </h1>
+		<img src="photo.jpg" class="photogs"><br>
+
+
+		<h1 style="color: white; padding: 15px;"><li><strong></strong><a href="https://en.wikipedia.org/wiki/Photography">Photography</a></li></h1>
+	</div>
+
+	<div class="hobby">
+		<h1 class = "head">VIDEOGRAPHY </i></h1>
+		<img src="vid.jpg" class="video"><br>
+
+		<h1 style="color: white; padding: 15px; "><li><strong></strong><a href="https://en.wikipedia.org/wiki/Videography">Videography</a></li></h1>
+	</div>
+
+	<div class="hobby">
+		<h1 class = "head">DANCING </h1>
+		<img src="dancing.jpg" class="photogs"><br>
+
+		<h1 style="color: white; padding: 15px; "><li><strong></strong><a href="https://en.wikipedia.org/wiki/Dance">Dancing</a></li></h1>
+	</div>
+	 <br>
+  <br>
+  <br>
+  <footer class="footer">
+	<table> <tr>
+  <p class="footer-ref">THANK YOU FOR VISITING US!</p>
+  <img src="3.png" class="footer-logo">
+</tr>
+<tr>
+	<p></p>
+</tr>
+</table>
+</footer>
+</body>
